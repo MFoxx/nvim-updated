@@ -14,6 +14,7 @@ return {
 
 		require("tokyonight").setup({
 			style = "night",
+			transparent = true,
 			on_colors = function(colors)
 				colors.bg = bg
 				colors.bg_dark = bg_dark
@@ -34,11 +35,11 @@ return {
 		})
 
 		-- transparent bg
-		vim.cmd("highlight Normal guibg=none")
-		vim.cmd("highlight NonText guibg=none")
-		vim.cmd("highlight Normal ctermbg=none")
-		vim.cmd("highlight Normal ctermbg=none")
-
+		-- vim.cmd("highlight Normal guibg=none")
+		-- vim.cmd("highlight NonText guibg=none")
+		-- vim.cmd("highlight Normal ctermbg=none")
+		-- vim.cmd("highlight Normal ctermbg=none")
+		--
 		-- end transparent bg
 
 		vim.cmd("colorscheme tokyonight")
